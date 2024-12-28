@@ -1,0 +1,15 @@
+.menu {
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.menu h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.menu p {
+  font-size: 1.2rem;
+  color: #555;
+}

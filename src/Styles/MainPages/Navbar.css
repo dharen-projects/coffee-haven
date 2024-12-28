@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent; /* Transparent background */
+  position: fixed; /* Fix navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 100; /* Ensure it stays above other content */
+}
+
+.navbar-logo .logo {
+  height: 50px; /* Adjust logo size */
+  width: auto;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #ffd700; /* Gold hover effect */
+}
+
+/* Body padding to avoid content overlap */
+body {
+  padding-top: 80px; /* Adjust based on navbar height */
+}
