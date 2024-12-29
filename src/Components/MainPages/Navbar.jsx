@@ -1,17 +1,43 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Use Link for navigation
-import "../../Styles/MainPages/Navbar.css"; // Import the CSS file
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "../../Styles/MainPages/Navbar.css";
+
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isScrolled ? "navbar-hidden" : ""}`}>
       <div className="navbar-logo">
-        <img
-          src="Images/Logo/coffee-haven-logo.png"
-          alt="Coffee Haven"
-          className="logo"
-        />
+        <h1>
+          Coffee Haven
+          <img
+            className="coffee-logo"
+            src="public/Images/Logo/coffee-haven-logo.png"
+            alt="Coffee Logo"
+          />
+        </h1>
       </div>
-      <ul className="navbar-links">
+      <ul className={`navbar-links ${isMenuOpen ? "show" : ""}`}>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -25,6 +51,9 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
+      <button className="menu-toggle" onClick={toggleMenu}>
+        &#9776;
+      </button>
     </nav>
   );
 };

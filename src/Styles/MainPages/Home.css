@@ -1,15 +1,25 @@
 .home {
   text-align: center;
   padding: 50px;
-  background-color: #f4f4f4;
+  background-image: url("/Images/HomePage/Main/homepage-main.jpg"); /* Reference the image */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Avoid repeating the image */
+  height: 100vh; /* Full viewport height */
+  display: flex; 
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  color: white; /* Make text white for better contrast */
 }
 
 .home h1 {
-  font-size: 2rem;
-  color: #333;
+  font-size: 3rem; /* Make the heading larger */
+  color: white; /* Ensure contrast with the background */
 }
 
 .home p {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 1.5rem; /* Increase paragraph size */
+  color: white; /* Ensure contrast with the background */
+  margin-top: 10px;
 }

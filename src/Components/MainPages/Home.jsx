@@ -1,10 +1,10 @@
 import React from "react";
+import MainContent from "../../Components/HomePages/MainContent";
 
 const Home = () => {
   return (
-    <div className="home">
-      <h1>Welcome to Coffee Haven</h1>
-      <p>Your favorite place for the best coffee.</p>
+    <div>
+      <MainContent />
     </div>
   );
 };

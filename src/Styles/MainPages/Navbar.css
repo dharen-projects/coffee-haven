@@ -1,41 +1,116 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: transparent; /* Transparent background */
-  position: fixed; /* Fix navbar at the top */
-  top: 0;
-  left: 0;
-  width: 100%; /* Full width */
-  z-index: 100; /* Ensure it stays above other content */
-}
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
 
-.navbar-logo .logo {
-  height: 50px; /* Adjust logo size */
-  width: auto;
-}
-
-.navbar-links {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem; /* Spacing between links */
+body,
+html {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.navbar-links li a {
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: transparent; /* Transparent background */
+  color: white;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  font-size: 28px;
+  font-family: "Rokkitt", serif;
+}
+
+.navbar-logo img {
+  margin-left: 5px;
+  width: 30px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  height: 50px;
+  line-height: 50px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+}
+
+.navbar-links a {
   text-decoration: none;
-  color: black;
-  font-size: 1rem;
+  color: white;
+  font-size: 20px;
+  font-family: "Rokkitt", serif;
+  line-height: 50px;
   transition: color 0.3s ease;
 }
 
-.navbar-links li a:hover {
-  color: #ffd700; /* Gold hover effect */
+.navbar-links a:hover {
+  color: #ffd700; /* Optional: hover effect */
 }
 
-/* Body padding to avoid content overlap */
-body {
-  padding-top: 80px; /* Adjust based on navbar height */
+/* Sticky Navbar for Desktop */
+@media (min-width: 769px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    display: none;
+    background-color: transparent; /* Fully transparent */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    gap: 0;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .navbar-links a {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .navbar-links li:hover {
+    transform: scale(1.2);
+  }
 }
