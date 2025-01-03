@@ -30,11 +30,6 @@ const Navbar = () => {
       <div className="navbar-logo">
         <h1>
           Coffee Haven
-          <img
-            className="coffee-logo"
-            src="/Images/Logo/coffee-haven-logo.png"
-            alt="."
-          />
         </h1>
       </div>
       <ul className={`navbar-links ${isMenuOpen ? "show" : ""}`}>
