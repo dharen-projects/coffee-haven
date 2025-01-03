@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&family=Inter&display=swap");
+
+/* About Info Container */
+.about-info {
+  background-image: url("/Images/HomePage/AboutInfo/homepage-aboutinfo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 100vh; /* Full height of the viewport */
+  margin: 10px; /* Margin around the background image */
+  box-sizing: border-box; /* Ensure padding and margin are included in the total box size */
+  overflow: hidden; /* Prevent content from overflowing */
+  border-radius: 15px; /* Set the radius of the corners */
+}
+
+.about-info .content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px; /* Padding inside the content */
+}
+
+.about-info h2 {
+  font-family: "Rokkitt", serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-info p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .about-info h2 {
+    font-size: 28px; /* Make h2 smaller on mobile */
+  }
+
+  .about-info p {
+    font-size: 16px; /* Make paragraph text smaller on mobile */
+  }
+}

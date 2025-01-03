@@ -32,7 +32,7 @@ const Navbar = () => {
           Coffee Haven
           <img
             className="coffee-logo"
-            src="public/Images/Logo/coffee-haven-logo.png"
+            src="/Images/Logo/coffee-haven-logo.png"
             alt="Coffee Logo"
           />
         </h1>
@@ -42,7 +42,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about">About</Link> 
         </li>
         <li>
           <Link to="/menu">Menu</Link>
