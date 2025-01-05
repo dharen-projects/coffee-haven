@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&family=Inter&display=swap");
+
+.coffee-best-seller {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Space out the title and link */
+  align-items: center; /* Align vertically */
+  margin-bottom: 0; /* Space below the header */
+}
+
+.title {
+  font-family: "Rokkitt", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin: 0; /* Remove default margin */
+}
+
+.view-more {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333; /* Blue color for the link */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
+}
+
+.view-more:hover {
+  color: #555555; /* Darker blue on hover */
+  text-decoration: underline 2px;
+}
+
+.coffee-list {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Divide the width into 4 equal columns */
+  gap: 20px; /* Space between the cards */
+  width: 100%;
+}
+
+.coffee-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Arrange image and name vertically */
+  padding: 20px; /* Equal padding around the content */
+}
+
+.coffee-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.coffee-item .image-container {
+  width: 100%; /* Full width of the parent container */
+  aspect-ratio: 1; /* Maintain square aspect ratio */
+  position: relative; /* Ensure the container holds its aspect ratio */
+  border-radius: 10px; /* Add rounding to the image container */
+  margin-bottom: 10px; /* Space between the image and the name */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.coffee-item img {
+  width: 100%; /* Fill the container width */
+  height: 100%; /* Fill the container height */
+  object-fit: cover; /* Maintain aspect ratio while covering the area */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.coffee-item h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333333;
+  margin: 0; /* Remove margin */
+  padding: 0; /* No padding needed for the title */
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .coffee-list {
+    grid-template-columns: 1fr; /* Stack the cards vertically on small screens */
+  }
+}

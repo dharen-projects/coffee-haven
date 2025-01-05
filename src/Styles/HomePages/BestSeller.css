@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
+
+.best-seller-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.best-seller-title {
+  font-family: "Rokkitt", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
