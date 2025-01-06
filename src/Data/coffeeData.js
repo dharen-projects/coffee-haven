@@ -11,7 +11,7 @@ const coffeeData = [
     name: "Americano",
     description:
       "Espresso diluted with hot water, a simple, bold, and smooth coffee.",
-    image: "/Images/Menu/Coffee/Americano.jpg",
+    image: "./Images/Menu/Coffee/Americano.jpg",
   },
   {
     id: 1003,
@@ -25,7 +25,7 @@ const coffeeData = [
     name: "Cappuccino",
     description:
       "Espresso with equal parts steamed milk and foam, rich and velvety.",
-    image: "/Images/Menu/Coffee/Cappuccino.jpg",
+    image: "../Images/Menu/Coffee/Cappuccino.jpg",
   },
   {
     id: 1005,
@@ -38,7 +38,7 @@ const coffeeData = [
     name: "Cortado Latte",
     description:
       "Espresso cut with steamed milk for a balanced, silky texture.",
-    image: "/Images/Menu/Coffee/Cortado-Latte.jpg",
+    image: "public/Images/Menu/Coffee/Cortado-Latte.jpg",
   },
   {
     id: 1007,
