@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
+
+/* Main Container */
+.copyright-container {
+  font-family: "Rokkitt", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0a0a0a; /* Text color */
+  padding: 15px 75px; /* Added padding to both sides */
+  font-size: 16px;
+  border-top: 1px solid #333; /* Subtle divider */
+}
+
+/* Left Links Section */
+.copyright-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.copyright-link {
+  text-decoration: none;
+  color: #0a0a0a; /* Text color */
+  transition: color 0.3s ease;
+}
+
+.copyright-link:hover {
+  color: gold; /* Highlight on hover */
+}
+
+/* Right Text Section */
+.copyright-text {
+  text-align: right;
+  font-size: 16px;
+  font-style: normal; /* Removed italic styling */
+}
+
+@media (max-width: 768px) {
+  .copyright-container,
+  .copyright-text {
+    font-size: 14px;
+  }
+
+  .copyright-container {
+    padding: 15px 20px;
+  }
+
+  .copyright-links {
+    gap: 10px;
+  }
+}

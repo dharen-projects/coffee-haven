@@ -26,11 +26,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${isScrolled ? "navbar-hidden" : ""}`}>
+    <nav
+      className={`navbar ${isMenuOpen ? "menu-open" : ""} ${
+        isScrolled ? "navbar-hidden" : ""
+      }`}
+    >
       <div className="navbar-logo">
-        <h1>
-          Coffee Haven
-        </h1>
+        <h1>Coffee Haven</h1>
       </div>
       <ul className={`navbar-links ${isMenuOpen ? "show" : ""}`}>
         <li>
@@ -47,7 +49,7 @@ const Navbar = () => {
         </li>
       </ul>
       <button className="menu-toggle" onClick={toggleMenu}>
-        &#9776;
+        {isMenuOpen ? "\u00D7" : "\u2261"} {/* Close (×) or Hamburger (≡) */}
       </button>
     </nav>
   );

@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&family=Inter&display=swap");
+
+.footer {
+  background-color: #0a0a0a; /* Background color */
+  color: #fff; /* Font color */
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Space between columns */
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+.footer-column {
+  flex: 0 0 auto; /* Prevent automatic resizing */
+  min-width: 200px; /* Maintain a minimum width */
+}
+
+/* First Row Ratio (30:20:20:20) */
+.footer-row:first-child .footer-column:first-child {
+  flex: 3; /* 30% width equivalent */
+}
+
+.footer-row:first-child .footer-column:nth-child(2),
+.footer-row:first-child .footer-column:nth-child(3),
+.footer-row:first-child .footer-column:nth-child(4) {
+  flex: 2; /* 20% width equivalent */
+}
+
+/* General Footer Column Styling */
+.footer-title {
+  font-family: "Rokkitt", serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column:first-child .footer-title {
+  font-size: 24px; /* COFFEE HAVEN larger than other titles */
+}
+
+.footer-description {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff; /* Font color */
+}
+
+.footer-links {
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff; /* Font color */
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: gold;
+}
+
+/* Social Icons Styling */
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #0a0a0a; /* Default color of the icon */
+  background-color: #fff; /* White background for the circle */
+  width: 30px; /* Set width for the circle */
+  height: 30px; /* Set height for the circle */
+  border-radius: 50%; /* Make the background circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18 px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #333; /* Hover background color */
+  color: #fff; /* Ensure icon color remains white on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Message Form Styling */
+.message-form {
+  display: flex;
+  gap: 10px; /* Space between input and button */
+  align-items: center;
+  margin-right: 75px; /* Add margin to the right */
+}
+
+.message-input {
+  width: 250px; /* Adjusted size */
+  height: 20px; /* Match send button height */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+  color: #222;
+  background-color: #fff;
+}
+
+.message-input::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+.send-button {
+  height: 40px;
+  padding: 10px;
+  background-color: gold;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  /* General footer adjustments */
+  .footer {
+    padding: 20px;
+    text-align: center; /* Center text by default */
+  }
+
+  /* First Column (COFFEE HAVEN) */
+  .footer .footer-column:first-child {
+    width: 100%; /* Full width */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below */
+  }
+
+  .footer .footer-column:first-child h3 {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .footer .footer-column:first-child p {
+    text-align: justify; /* Justify description text */
+    margin: 0 auto;
+    text-indent: 50px;
+    margin-bottom: -20px;
+  }
+
+  /* Second Row: SHOP INFO, SERVICES, HELP */
+  .footer-row:nth-child(2) {
+    display: flex; /* Flexbox for horizontal alignment */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between; /* Spread out columns */
+    gap: 10px; /* Add spacing between columns */
+  }
+
+  .footer-row:nth-child(2) .footer-column {
+    flex: 1; /* Equal width */
+    text-align: left; /* Align text to the left */
+    padding: 0; /* Remove padding */
+  }
+
+  /* Third Row: Social Links and Message Form */
+  .footer-row:nth-child(3) {
+    display: flex; /* Flexbox for horizontal alignment */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between; /* Spread out elements */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add spacing between elements */
+    margin-top: 20px; /* Space above */
+  }
+
+  .footer-row:nth-child(3) .footer-column {
+    flex: 1; /* Equal width */
+    text-align: center; /* Center content */
+  }
+
+  /* Align social links horizontally */
+  .social-links {
+    display: flex; /* Flexbox for icons */
+    justify-content: center; /* Center icons */
+    gap: 10px; /* Space between icons */
+  }
+
+  /* Message form alignment */
+  .footer-row:nth-child(3) form {
+    display: flex; /* Flexbox for form elements */
+    justify-content: center; /* Center form horizontally */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Space between input and button */
+  }
+
+  /* Adjust form inputs and button for mobile */
+  form input,
+  form button {
+    width: auto; /* Adjust to content */
+    padding: 5px 10px; /* Padding for smaller screens */
+    font-size: 14px; /* Smaller font size */
+  }
+  .message-input {
+    min-width: 210px;
+    margin-left: -50px;
+  }
+}
