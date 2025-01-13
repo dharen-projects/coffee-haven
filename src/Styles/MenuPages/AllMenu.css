@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
+
+.all-container {
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Rokkitt", serif;
+}
+
+.all-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.all-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+  margin: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.all-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.all-card-img-container {
+  position: relative;
+}
+
+.all-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.info-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.info-icon:hover {
+  transform: scale(1.2);
+}
+
+.all-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #0a0a0a;
+}
+
+.all-card-price-favorite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
+.heart-icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.heart-icon.favorited {
+  color: #d2042d;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2);
+}
+
+.all-card-labels {
+  margin-top: 5px;
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+
+.all-label {
+  font-size: 10px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.new-label {
+  /* background-color: #4caf50; */
+  background-image: linear-gradient(
+    to right top,
+    #27ee63,
+    #00d376,
+    #00b67e,
+    #009a7c,
+    #087d72
+  );
+}
+
+.best-label {
+  /* background-color: #ff9800; */
+  background-image: linear-gradient(
+    to right top,
+    #b030cd,
+    #ca16b1,
+    #da0096,
+    #e2007c,
+    #e31e64
+  );
+}
+
+.all-card-description-container {
+  margin-top: 10px;
+}
+
+.all-card-description {
+  text-align: justify;
+  text-indent: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .all-container {
+    margin-top: 10px; /* Increase margin for mobile view if needed */
+  }
+
+  .all-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 20px; /* Add space between rows and columns */
+    justify-content: center;
+  }
+
+  .all-card {
+    width: 85%; /* Ensure the card takes up its grid space */
+    margin: 0; /* Remove additional margins */
+  }
+
+  .all-card-img {
+    height: auto; /* Maintain aspect ratio */
+  }
+}

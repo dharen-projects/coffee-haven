@@ -5,6 +5,9 @@ import Home from "./Components/MainPages/Home";
 import About from "./Components/MainPages/About";
 import Menu from "./Components/MainPages/Menu";
 import Contact from "./Components/MainPages/Contacts";
+import Footer from "./Components/HomePages/Footer";
+import Copyright from "./Components/HomePages/Copyright";
+import ScrollUp from "./Components/MainPages/ScrollUp";
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
         <Route path="/menu" element={<Menu />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
+      <Copyright />
+      <ScrollUp />
     </Router>
   );
 };

@@ -1,0 +1,60 @@
+.menu-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0; /* Removed padding */
+  margin-top: -40px; /* Removed margin */
+  background-color: transparent; /* Transparent background */
+}
+
+.menu-bar-choice {
+  border-radius: 20px;
+  border: none;
+  background-color: #e4e4e4; /* Light background color for each choice */
+  padding: 10px 20px; /* Added padding to the choices */
+  font-size: 16px;
+  font-weight: bold;
+  color: #0a0a0a; /* Default text color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Added transition for smooth hover effect */
+}
+
+.menu-bar-choice:hover {
+  background-image: linear-gradient(
+    to right top,
+    #b030cd,
+    #ca16b1,
+    #da0096,
+    #e2007c,
+    #e31e64
+  );
+
+  color: white;
+}
+
+.menu-bar-choice.active {
+  background-image: linear-gradient(
+    to right top,
+    #27ee63,
+    #00d376,
+    #00b67e,
+    #009a7c,
+    #087d72
+  );
+
+  color: white;
+}
+
+.menu-bar-choice:hover,
+.menu-bar-choice.active {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .menu-bar {
+    padding: 0 20px;
+  }
+  .menu-bar-choice {
+    font-size: smaller;
+  }
+}
