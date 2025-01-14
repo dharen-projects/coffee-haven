@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-row">
         {/* First Column */}
-        <div className="footer-column">
+        <div className="footer-column-haven">
           <h3 className="footer-title">COFFEE HAVEN</h3>
           <p className="footer-description">
             Experience the finest coffee in town. Your daily dose of caffeine,
@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
         {/* Second Column */}
-        <div className="footer-column">
+        <div className="footer-column footer-center">
           <h3 className="footer-title">SHOP INFO</h3>
           <ul className="footer-links">
             <li>
@@ -35,7 +35,7 @@ const Footer = () => {
           </ul>
         </div>
         {/* Third Column */}
-        <div className="footer-column">
+        <div className="footer-column footer-center">
           <h3 className="footer-title">SERVICES</h3>
           <ul className="footer-links">
             <li>
@@ -47,7 +47,7 @@ const Footer = () => {
           </ul>
         </div>
         {/* Fourth Column */}
-        <div className="footer-column">
+        <div className="footer-column footer-center">
           <h3 className="footer-title">HELP</h3>
           <ul className="footer-links">
             <li>
@@ -62,7 +62,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="footer-row">
+      <div className="footer-row second">
         {/* First Column - Social Media */}
         <div className="footer-column">
           <div className="social-icons">
@@ -90,7 +90,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Second Column - Message Bar */}
-        <div className="footer-column">
+        <div className="footer-column-second">
           <form className="message-form">
             <textarea
               placeholder="Type your message here..."

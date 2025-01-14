@@ -146,3 +146,50 @@
     height: auto; /* Maintain aspect ratio */
   }
 }
+
+@media (max-width: 540px) {
+  .newmenu-container {
+    margin-top: 10px; /* Increase margin for mobile view if needed */
+  }
+
+  .newmenu-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 20px; /* Add space between rows and columns */
+    justify-content: center;
+  }
+
+  .newmenu-card {
+    width: 90%; /* Ensure the card takes up its grid space */
+    margin: 0; /* Remove additional margins */
+    padding: 10px;
+  }
+
+  .newmenu-card-img {
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .newmenu-card-labels {
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+  }
+
+  .newmenu-card-labels .new-label,
+  .newmenu-card-labels .best-label {
+    font-size: 8px !important;
+    padding: 5px 10px;
+  }
+
+  .newmenu-card-description {
+    margin-top: -5px !important;
+  }
+
+  .newmenu-card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #0a0a0a;
+  }
+}

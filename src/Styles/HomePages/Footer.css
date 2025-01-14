@@ -3,7 +3,7 @@
 .footer {
   background-color: #0a0a0a; /* Background color */
   color: #fff; /* Font color */
-  padding: 10px 20px;
+  padding: 10px 50px;
   text-align: left;
 }
 
@@ -13,12 +13,15 @@
   justify-content: space-between;
   gap: 20px; /* Space between columns */
   margin-bottom: 20px;
-  margin-left: 5%;
 }
 
 .footer-column {
   flex: 0 0 auto; /* Prevent automatic resizing */
-  min-width: 200px; /* Maintain a minimum width */
+  min-width: auto; /* Maintain a minimum width */
+}
+
+.footer-column-haven {
+  max-width: 50%;
 }
 
 /* First Row Ratio (30:20:20:20) */
@@ -87,7 +90,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18 px;
+  font-size: 18px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -102,7 +105,6 @@
   display: flex;
   gap: 10px; /* Space between input and button */
   align-items: center;
-  margin-right: 75px; /* Add margin to the right */
 }
 
 .message-input {
@@ -138,85 +140,78 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-  /* General footer adjustments */
+@media (max-width: 540px) {
+  /* Footer overall layout */
   .footer {
-    padding: 20px;
-    text-align: center; /* Center text by default */
+    padding: 10px;
+    text-align: center; /* Center align text */
   }
 
-  /* First Column (COFFEE HAVEN) */
-  .footer .footer-column:first-child {
-    width: 100%; /* Full width */
-    text-align: center; /* Center the title */
-    margin-bottom: 20px; /* Space below */
+  /* Ensure all footer columns in one row */
+  .footer-row {
+    flex-direction: row; /* Align all columns horizontally */
+    gap: 10px; /* Space between columns */
+    justify-content: center; /* Center all columns */
   }
 
-  .footer .footer-column:first-child h3 {
-    margin: 0 auto;
-    margin-top: 20px;
+  .footer-column-haven {
+    padding: 0 10px;
+    max-width: 100%;
+    margin-bottom: -25px;
   }
 
-  .footer .footer-column:first-child p {
-    text-align: justify; /* Justify description text */
-    margin: 0 auto;
-    text-indent: 50px;
-    margin-bottom: -20px;
+  .footer-column-haven .footer-title {
+    text-align: center;
+    margin-bottom: -10px;
   }
 
-  /* Second Row: SHOP INFO, SERVICES, HELP */
-  .footer-row:nth-child(2) {
-    display: flex; /* Flexbox for horizontal alignment */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: space-between; /* Spread out columns */
-    gap: 10px; /* Add spacing between columns */
+  .footer-column-haven .footer-description {
+    text-align: justify;
+    text-indent: 25px;
   }
 
-  .footer-row:nth-child(2) .footer-column {
-    flex: 1; /* Equal width */
-    text-align: left; /* Align text to the left */
-    padding: 0; /* Remove padding */
+  /* Adjust each footer column */
+  .footer-column {
+    flex: 1 1 20%; /* Flexibility: each column takes up equal space */
+    min-width: 100px; /* Ensure minimum width */
+    max-width: 150px; /* Ensure they don’t exceed this width */
+    text-align: center; /* Center align text in each column */
   }
 
-  /* Third Row: Social Links and Message Form */
-  .footer-row:nth-child(3) {
-    display: flex; /* Flexbox for horizontal alignment */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: space-between; /* Spread out elements */
-    align-items: center; /* Align items vertically */
-    gap: 10px; /* Add spacing between elements */
-    margin-top: 20px; /* Space above */
+  /* Specific adjustments for each column */
+  .footer-title {
+    font-size: 16px; /* Slightly smaller font for smaller screens */
+    margin-bottom: -10px;
   }
 
-  .footer-row:nth-child(3) .footer-column {
-    flex: 1; /* Equal width */
-    text-align: center; /* Center content */
+  .footer-links a {
+    font-size: 12px; /* Smaller text for links */
   }
 
-  /* Align social links horizontally */
-  .social-links {
-    display: flex; /* Flexbox for icons */
-    justify-content: center; /* Center icons */
+  .social-icons {
+    justify-content: center;
     gap: 10px; /* Space between icons */
   }
 
-  /* Message form alignment */
-  .footer-row:nth-child(3) form {
-    display: flex; /* Flexbox for form elements */
-    justify-content: center; /* Center form horizontally */
-    align-items: center; /* Vertically align items */
-    gap: 10px; /* Space between input and button */
+  .footer-description {
+    font-size: 12px; /* Smaller font for the description */
   }
 
-  /* Adjust form inputs and button for mobile */
-  form input,
-  form button {
-    width: auto; /* Adjust to content */
-    padding: 5px 10px; /* Padding for smaller screens */
-    font-size: 14px; /* Smaller font size */
-  }
   .message-input {
-    min-width: 210px;
-    margin-left: -50px;
+    width: 150px; /* Adjust input width for mobile */
+    height: 15px;
+  }
+
+  .send-button {
+    width: 100px; /* Adjust button width for mobile */
+    height: 35px;
+  }
+
+  .message-input::placeholder {
+    font-size: 10px;
+  }
+
+  .footer-links li {
+    margin-bottom: 2px;
   }
 }

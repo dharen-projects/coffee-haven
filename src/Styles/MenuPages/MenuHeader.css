@@ -162,3 +162,43 @@ body {
     right: 20px;
   }
 }
+
+@media (max-width: 540px) {
+  .menu-header {
+    height: 250px;
+    width: 100%;
+  }
+
+  .menu-header-text,
+  .menu-header-button {
+    left: 40px;
+  }
+
+  .menu-header-text {
+    font-size: 20px;
+    max-width: 200px;
+    top: 70px;
+  }
+
+  .menu-header-button {
+    font-size: 12px;
+    top: 150px;
+    padding: 7.5px 10px;
+  }
+
+  .menu-header-image {
+    width: 175px;
+  }
+
+  .menu-header-mint {
+    width: 100px;
+    left: 125px;
+  }
+
+  .circle-outline-right {
+    bottom: -100px;
+    right: 25px;
+    width: 150px;
+    height: 150px;
+  }
+}

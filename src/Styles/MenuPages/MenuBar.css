@@ -58,3 +58,19 @@
     font-size: smaller;
   }
 }
+
+@media (max-width: 400px) {
+  .menu-bar {
+    gap: 5px;
+  }
+
+  .menu-bar-choice {
+    font-size: x-small;
+    padding: 5px 7px;
+    border-radius: 7px;
+  }
+
+  .menu-bar-choice:first-child {
+    padding: 5px 10px;
+  }
+}

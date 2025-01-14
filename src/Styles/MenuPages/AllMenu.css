@@ -159,3 +159,50 @@
     height: auto; /* Maintain aspect ratio */
   }
 }
+
+@media (max-width: 540px) {
+  .all-container {
+    margin-top: 10px; /* Increase margin for mobile view if needed */
+  }
+
+  .all-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 20px; /* Add space between rows and columns */
+    justify-content: center;
+  }
+
+  .all-card {
+    width: 90%; /* Ensure the card takes up its grid space */
+    margin: 0; /* Remove additional margins */
+    padding: 10px;
+  }
+
+  .all-card-img {
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .all-card-labels {
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+  }
+
+  .all-card-labels .new-label,
+  .all-card-labels .best-label {
+    font-size: 8px !important;
+    padding: 5px 10px;
+  }
+
+  .all-card-description {
+    margin-top: -5px !important;
+  }
+
+  .all-card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #0a0a0a;
+  }
+}
