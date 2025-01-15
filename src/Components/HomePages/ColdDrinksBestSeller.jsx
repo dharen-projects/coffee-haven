@@ -30,6 +30,9 @@ const ColdDrinksBestSeller = () => {
           </div>
         ))}
       </div>
+      <Link to="/menu" className="bottom-view-more">
+        <button className="button-view-more">View More</button>
+      </Link>
     </div>
   );
 };

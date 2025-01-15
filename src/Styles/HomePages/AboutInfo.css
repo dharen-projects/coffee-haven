@@ -49,3 +49,22 @@
     font-size: 16px; /* Make paragraph text smaller on mobile */
   }
 }
+
+@media (max-width: 540px) {
+  .about-info {
+    height: 60vh;
+  }
+  .about-info h2 {
+    font-size: 24px; /* Make h2 smaller on mobile */
+    margin-bottom: -10px;
+    margin-top: 10px;
+  }
+
+  .about-info p {
+    font-size: 14px; /* Make paragraph text smaller on mobile */
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: -10px;
+    line-height: 20px;
+  }
+}

@@ -13,3 +13,9 @@
   color: #333333;
   margin-bottom: 20px;
 }
+
+@media (max-width: 540px) {
+  .best-seller-title {
+    font-size: 18px;
+  }
+}

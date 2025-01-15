@@ -83,7 +83,7 @@
 
 .pastriesdesserts-item h3 {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin-top: 10px;
   color: #333333;
@@ -95,5 +95,37 @@
 @media (max-width: 768px) {
   .pastriesdesserts-list {
     grid-template-columns: 1fr; /* Stack the cards vertically on small screens */
+  }
+}
+
+@media (max-width: 540px) {
+  .title {
+    font-size: 20px !important;
+  }
+
+  .view-more {
+    visibility: hidden;
+  }
+
+  .button-view-more {
+    background-image: linear-gradient(
+      to right top,
+      #27ee63,
+      #00d376,
+      #00b67e,
+      #009a7c,
+      #087d72
+    );
+    color: white;
+    font-size: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    visibility: visible;
+    margin-top: 15px;
+  }
+
+  .pastriesdesserts-item h3 {
+    font-size: 14px;
   }
 }
