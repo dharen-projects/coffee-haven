@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Tienne&display=swap");
+
+.year-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background-image: url("/Images/AboutPage/Year/year-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.year-text-content {
+  padding: 0 25% 0 100px;
+}
+
+.year-text-content h3 {
+  font-family: "Tienne", serif;
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.year-text-content h5 {
+  text-align: justify;
+  text-indent: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.yr {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: "Rokkitt", serif;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-image: linear-gradient(
+    to right top,
+    #27ee63,
+    #00d376,
+    #00b67e,
+    #009a7c,
+    #087d72
+  );
+  color: white;
+}
+
+@media (max-width: 540px) {
+  .year-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+  }
+
+  .year-text-content {
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  .year-text-content h3 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .year-text-content h5 {
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .yr {
+    font-size: 14px;
+  }
+}

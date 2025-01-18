@@ -1,0 +1,80 @@
+/* Container for the download button */
+.download-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #0a0a0a; /* Light background color */
+  color: white;
+  top: -60px;
+}
+
+/* Download Button Styling */
+.download-button {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 20px; /* Padding for the button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.download-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Focus Effect */
+.download-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.8); /* Glow effect on focus */
+}
+
+.contact-overlay-coffee {
+  position: absolute;
+  top: -20px; /* Move the div 50% down from the top */
+  right: 0; /* Move the div 50% right from the left */
+  width: auto;
+  height: 75%;
+  z-index: 2;
+  filter: brightness(0.5);
+  opacity: 0.2;
+}
+
+.flipped-contact-overlay-coffee {
+  position: absolute;
+  top: -20px; /* Move the div 50% down from the top */
+  left: 0; /* Move the div 50% right from the left */
+  width: auto;
+  height: 75%;
+  z-index: 2;
+  filter: brightness(0.5);
+  opacity: 0.2;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 1000px) {
+  .contact-overlay-coffee {
+    height: 50%;
+  }
+
+  .flipped-contact-overlay-coffee {
+    height: 50%;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact-overlay-coffee {
+    height: 75%;
+  }
+
+  .flipped-contact-overlay-coffee {
+    visibility: hidden;
+  }
+}

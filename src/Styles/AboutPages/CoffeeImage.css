@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.coffee {
+  height: 300px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.coffee-container {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.coffee-image {
+  position: absolute;
+  top: 50%; /* Move the div 50% down from the top */
+  left: 50%; /* Move the div 50% right from the left */
+  transform: translate(-50%, -20%);
+  width: auto;
+  height: 400px;
+  z-index: 2;
+  /* filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.9)); */
+}
+
+.card-container {
+  position: absolute; /* Position relative to the nearest positioned ancestor */
+  top: 75%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset by 50% of its own width and height */
+  display: flex; /* Make the container a flex container */
+  justify-content: space-between; /* Optional: Add space between the two cards */
+  align-items: center; /* Optional: Align items vertically */
+  width: 90%; /* Example width of the container */
+  padding: 10px; /* Optional: Add some padding */
+}
+
+.left-card,
+.right-card,
+.center {
+  flex: 1;
+}
+
+.center {
+  max-width: 10%;
+  margin: 0 100px;
+  visibility: hidden;
+}
+
+.left-card,
+.right-card {
+  text-align: center; /* Center text inside each card */
+  padding: 20px;
+  background-color: transparent; /* Example background color */
+}
+
+.icons {
+  display: flex; /* Use flexbox for a row layout */
+  align-items: center; /* Vertically center-align the image and text */
+  gap: 15px; /* Add spacing between the image and the text */
+  padding: 5px;
+  width: 100%;
+}
+
+.coffee-icon {
+  width: 40px; /* Adjust the size of the image */
+  height: 40px; /* Maintain a consistent size */
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.left h3 {
+  margin: 0; /* Remove default margin for the heading */
+  font-size: 18px; /* Adjust font size */
+  text-align: left;
+  color: #132a13;
+}
+
+.left p {
+  margin: 0; /* Remove default margin for the paragraph */
+  font-size: 14px; /* Adjust font size for the text */
+  color: #344e41; /* Set a text color */
+  text-align: left;
+}
+
+.right h3 {
+  margin: 0; /* Remove default margin for the heading */
+  font-size: 18px; /* Adjust font size */
+  text-align: right;
+  width: 100%;
+  color: #132a13;
+}
+
+.right p {
+  margin: 0; /* Remove default margin for the paragraph */
+  font-size: 14px; /* Adjust font size for the text */
+  color: #344e41; /* Set a text color */
+  text-align: right;
+}
+
+.six-icons {
+  visibility: hidden;
+}
+
+@media (max-width: 1200px) {
+  .left h3,
+  .right h3 {
+    font-size: 14px;
+  }
+
+  .left p,
+  .right p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .coffee-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: auto;
+    height: 250px;
+    z-index: 2;
+    /* filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.9)); */
+  }
+
+  .center {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 540px) {
+  .coffee {
+    position: relative;
+    visibility: hidden;
+    max-width: 540px;
+    overflow: hidden;
+  }
+
+  .coffee-image {
+    position: absolute;
+    top: 50%; /* Move the div 50% down from the top */
+    left: 50%; /* Move the div 50% right from the left */
+    transform: translate(-50%, -15%);
+    width: auto;
+    height: 175px;
+    visibility: visible;
+  }
+
+  .six-icons {
+    visibility: visible;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -50px;
+  }
+
+  .six-left {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align content */
+    text-align: center; /* Center-align text */
+    line-height: 0;
+  }
+
+  .six-left img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .six-left p {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #344e41;
+  }
+}

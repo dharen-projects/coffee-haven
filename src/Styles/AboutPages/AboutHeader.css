@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkit&display=swap");
+
+.about-header {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    #323232,
+    #303030,
+    #2e2e2e,
+    #2c2c2c,
+    #2a2a2a,
+    #272727,
+    #242424,
+    #212121,
+    #1c1c1c,
+    #181718,
+    #131212,
+    #0d0b0b
+  );
+  height: 300px;
+  width: 100%;
+  top: -60px;
+}
+
+.coffee-beans-image {
+  position: absolute;
+  top: 50%; /* Move the div 50% down from the top */
+  left: 50%; /* Move the div 50% right from the left */
+  transform: translate(-50%, -40%);
+  width: 400px;
+  height: auto;
+  z-index: 2;
+  filter: brightness(0.75) drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.7));
+}
+
+.header-overlay-coffee {
+  position: absolute;
+  top: -20px; /* Move the div 50% down from the top */
+  right: 0; /* Move the div 50% right from the left */
+  width: 300px;
+  height: auto;
+  z-index: 2;
+  filter: brightness(0.5);
+  opacity: 0.2;
+}
+
+.header-overlay-beans {
+  position: absolute;
+  bottom: 0; /* Move the div 50% down from the top */
+  left: -50px; /* Move the div 50% right from the left */
+  width: 400px;
+  height: auto;
+  z-index: 2;
+  filter: brightness(0.3);
+  opacity: 0.2;
+}
+
+.left-text {
+  position: absolute;
+  top: 30%;
+  left: 100px;
+  gap: 20px; /* Add space between elements */
+}
+
+.left-text span {
+  font-family: "Holtwood One SC", serif;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 2px;
+  display: block; /* Ensure spans behave like block elements */
+  text-align: left; /* Center text inside the spans */
+}
+
+.left-text button {
+  display: flex;
+  justify-content: center; /* Center text and icon vertically */
+  gap: 10px; /* Space between text and icon */
+  background-image: linear-gradient(
+    to right top,
+    #b030cd,
+    #ca16b1,
+    #da0096,
+    #e2007c,
+    #e31e64
+  );
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  font-size: larger;
+}
+
+/* .left-text button:hover {
+  transform: scale(1.05);
+} */
+
+.left-text button:hover .icon {
+  transform: rotate(-30deg);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+  .coffee-beans-image {
+    top: 50%; /* Move the div 50% down from the top */
+    left: 50%; /* Move the div 50% right from the left */
+    transform: translate(-50%, -15%);
+    width: 300px;
+    height: auto;
+    z-index: 2;
+    filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.7));
+  }
+
+  .left-text {
+    top: 30%;
+    left: 50px;
+  }
+
+  .left-text span {
+    font-size: 20px;
+  }
+
+  .left-text button {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header-overlay-coffee {
+    top: -20px; /* Move the div 50% down from the top */
+    right: 0; /* Move the div 50% right from the left */
+    width: 300px;
+    height: auto;
+  }
+
+  .header-overlay-beans {
+    position: absolute;
+    bottom: 0; /* Move the div 50% down from the top */
+    left: -50px; /* Move the div 50% right from the left */
+    width: 200px;
+    height: auto;
+  }
+
+  .left-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 0;
+    width: 250px;
+  }
+
+  .left-text span {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .left-text button {
+    max-width: 200px;
+  }
+
+  .coffee-beans-image {
+    top: 50%; /* Move the div 50% down from the top */
+    left: 50%; /* Move the div 50% right from the left */
+    transform: translate(-50%, 10%);
+    width: 200px;
+    height: auto;
+  }
+}

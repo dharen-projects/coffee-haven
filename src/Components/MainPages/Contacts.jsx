@@ -1,10 +1,10 @@
 import React from "react";
+import Download from "../../Components/ContactPages/Download";
 
 const Contacts = () => {
   return (
     <div className="contacts">
-      <h1>Contact Us</h1>
-      <p>Have any questions? Reach out to us!</p>
+      <Download />
     </div>
   );
 };

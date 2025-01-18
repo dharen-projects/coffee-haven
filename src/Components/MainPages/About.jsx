@@ -1,10 +1,14 @@
 import React from "react";
+import AboutHeader from "../../Components/AboutPages/AboutHeader";
+import CoffeeImage from "../../Components/AboutPages/CoffeeImage";
+import Year from "../../Components/AboutPages/Year";
 
 const About = () => {
   return (
-    <div className="about">
-      <h1>About Coffee Haven</h1>
-      <p>At Coffee Haven, we provide a perfect cup of coffee, every time.</p>
+    <div className="about-page">
+      <AboutHeader />
+      <CoffeeImage />
+      <Year />
     </div>
   );
 };
