@@ -2,7 +2,7 @@
 
 /* About Info Container */
 .about-info {
-  background-image: url("/Images/HomePage/AboutInfo/homepage-aboutinfo.jpg");
+  background-image: url("https://dharen-projects.github.io/coffee-haven/Images/HomePage/AboutInfo/homepage-aboutinfo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
