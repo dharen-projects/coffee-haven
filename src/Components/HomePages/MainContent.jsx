@@ -4,7 +4,7 @@ import "../../Styles/HomePages/MainContent.css";
 
 const MainContent = () => {
   return (
-    <div className="main-content">
+    <div className="homepage-main-content">
       <div className="text-content">
         <h3>Brewed Fresh, Just For You</h3>
         <h1>COFFEE HAVEN</h1>
