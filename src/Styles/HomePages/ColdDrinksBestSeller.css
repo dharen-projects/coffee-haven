@@ -74,7 +74,7 @@
   overflow: hidden; /* Prevent content overflow */
 }
 
-.colddrinks-item img {
+.home-colddrinks-image {
   width: 100%; /* Fill the container width */
   height: 100%; /* Fill the container height */
   object-fit: cover; /* Maintain aspect ratio while covering the area */

@@ -20,7 +20,8 @@
   font-size: 24px;
   font-weight: bold;
   color: #333333;
-  margin: 0; /* Remove default margin */
+  margin-bottom: 20px;
+  text-align: left; /* Remove default margin */
 }
 
 .view-more {
@@ -73,7 +74,7 @@
   overflow: hidden; /* Prevent content overflow */
 }
 
-.coffee-item img {
+.home-coffee-image {
   width: 100%; /* Fill the container width */
   height: 100%; /* Fill the container height */
   object-fit: cover; /* Maintain aspect ratio while covering the area */

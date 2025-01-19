@@ -23,7 +23,7 @@ const CoffeeBestSeller = () => {
               <img
                 src={coffee.image}
                 alt={coffee.name}
-                className="coffee-image"
+                className="home-coffee-image"
               />
             </div>
             <h3 className="coffee-name">{coffee.name}</h3>

@@ -23,7 +23,7 @@ const ColdDrinksBestSeller = () => {
               <img
                 src={colddrinks.image}
                 alt={colddrinks.name}
-                className="coffee-image"
+                className="home-colddrinks-image"
               />
             </div>
             <h3 className="colddrinks-name">{colddrinks.name}</h3>

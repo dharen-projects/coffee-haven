@@ -23,7 +23,7 @@ const PastriesDessertsBestSeller = () => {
               <img
                 src={pastriesdesserts.image}
                 alt={pastriesdesserts.name}
-                className="pastriesdesserts-image"
+                className="home-pastriesdesserts-image"
               />
             </div>
             <h3 className="pastriesdesserts-name">{pastriesdesserts.name}</h3>
