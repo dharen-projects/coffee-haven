@@ -67,6 +67,10 @@
   .flipped-contact-overlay-coffee {
     height: 50%;
   }
+
+  .download-button {
+    z-index: 50;
+  }
 }
 
 @media (max-width: 540px) {
@@ -76,5 +80,9 @@
 
   .flipped-contact-overlay-coffee {
     visibility: hidden;
+  }
+
+  .download-button {
+    z-index: 50;
   }
 }

@@ -4,7 +4,8 @@ import "../../Styles/ContactPages/Download.css";
 const DownloadButton = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "./Documents/dharen-resume.pdf"; // Path to the PDF file
+    link.href =
+      "https://dharen-projects.github.io/coffee-haven/Documents/dharen-resume.pdf"; // Path to the PDF file
     link.download = "dharen-resume.pdf"; // File name when downloaded
     link.click();
   };
