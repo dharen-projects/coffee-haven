@@ -16,7 +16,6 @@
   box-sizing: border-box; /* Ensure padding and margin are included in the total box size */
   overflow: hidden; /* Prevent content from overflowing */
   border-radius: 15px; /* Set the radius of the corners */
-  margin-top: -60px;
 }
 
 .about-info .content {
@@ -45,46 +44,6 @@
   font-size: 70px;
   margin: 0;
   margin-bottom: 5px;
-}
-
-.buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.btn {
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: "Rokkitt", serif;
-  font-size: 18px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  display: inline-block;
-}
-
-.products {
-  background-color: rgba(16, 23, 32, 0.8);
-  color: white;
-}
-
-.learn-more {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-}
-
-.btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-}
-
-@media (min-width: 1024px) {
-  .about-info {
-    background-image: url("/Images/HomePage/AboutInfo/homepage-aboutinfo.jpg");
-    background-size: cover;
-    background-position: center;
-  }
 }
 
 /* Mobile View */
