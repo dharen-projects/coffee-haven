@@ -6,7 +6,7 @@ import BestSeller from "../../Components/HomePages/BestSeller";
 const Home = () => {
   return (
     <div>
-      <MainContent />
+      {/* <MainContent /> */}
       <AboutInfo />
       <BestSeller />
     </div>
