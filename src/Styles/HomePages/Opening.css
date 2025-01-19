@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&family=Inter&display=swap");
+
+.opening {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/Images/HomePage/Main/background1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: -60px;
+  box-sizing: border-box;
+}
+
+.text-content h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.text-content h1 {
+  font-family: "Rokkitt", serif;
+  font-size: 70px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.text-content h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Rokkitt", serif;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.products {
+  background-color: rgba(16, 23, 32, 0.8);
+  color: white;
+}
+
+.learn-more {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0 20px; /* Add 20px padding on both sides */
+    height: 100vh; /* Ensure the background covers the full height */
+    margin-top: -60px; /* Remove the negative margin to prevent overlap */
+  }
+
+  .text-content h1 {
+    font-size: 50px; /* Adjust font size for smaller screens */
+  }
+
+  .text-content h3,
+  .text-content h5 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .btn {
+    font-size: 16px; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 540px) {
+  .main-content {
+    height: 60vh;
+  }
+
+  .text-content h1 {
+    font-size: 40px;
+  }
+
+  .text-content h3 {
+    font-size: 16px;
+  }
+
+  .text-content h5 {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 0 15px;
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 14px; /* Adjust button font size */
+    padding: 10px 15px;
+  }
+}
