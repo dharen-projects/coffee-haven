@@ -2,7 +2,7 @@
 
 /* About Info Container */
 .about-info {
-  background-image: url("https://dharen-projects.github.io/coffee-haven/Images/HomePage/AboutInfo/homepage-aboutinfo.jpg");
+  background-image: url("/Images/HomePage/AboutInfo/homepage-aboutinfo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -77,6 +77,14 @@
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
+}
+
+@media (min-width: 1024px) {
+  .about-info {
+    background-image: url("/Images/HomePage/AboutInfo/homepage-aboutinfo.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /* Mobile View */
