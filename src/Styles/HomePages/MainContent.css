@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt&family=Inter&display=swap");
 
+.homepage-main-content {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: 1024px) {
   .homepage-main-content {
     display: flex;
@@ -7,7 +11,7 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    background-image: url("./Images/HomePage/Main/background1.jpg");
+    background-image: url("/Images/HomePage/Main/background1.jpg");
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.3);
