@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../Styles/HomePages/AboutInfo.css";
 
 const AboutInfo = () => {
@@ -11,6 +12,15 @@ const AboutInfo = () => {
           From rich, bold flavors to smooth, aromatic blends, every sip is
           designed to awaken your senses and elevate your coffee experience.
         </p>
+        <h1>COFFEE HAVEN</h1>
+        <div className="buttons">
+          <Link to="/menu" className="btn products">
+            Products
+          </Link>
+          <Link to="/about" className="btn learn-more">
+            Learn More
+          </Link>
+        </div>
       </div>
     </div>
   );
